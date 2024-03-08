@@ -1,78 +1,8 @@
 <mujoco model="spot">
-  <compiler angle="radian" meshdir="assets" texturedir="assets" autolimits="true"/>
-
-  <option cone="elliptic" impratio="100"/>
-
-  <default>
-    <material specular="0" shininess="0.25"/>
-    <default class="anymal_c">
-      <joint damping="1" frictionloss="0.1"/>
-
-      <default class="visual">
-        <geom type="mesh" contype="0" conaffinity="0" group="2"/>
-        <default class="visual_zflip">
-          <geom quat="0 0 0 1"/>
-        </default>
-      </default>
-      <default class="collision">
-        <geom group="3" type="cylinder"/>
-        <default class="foot">
-          <geom type="sphere" size="0.03" pos="0 0 0.02325" priority="1" solimp="0.015 1 0.031" condim="6"
-            friction="0.8 0.02 0.01"/>
-        </default>
-      </default>
-
-      <default class="affine">
-        <position kp="100" ctrlrange="-6.28 6.28" forcerange="-80 80"/>
-      </default>
-    </default>
-  </default>
-
   <asset>
-    <material name="black_plastic" rgba="0.007 0.007 0.007 1"/>
-    <material name="green" rgba="0.052 0.178 0.033 1"/>
-    <material name="red" rgba="0.178 0.006 0.005 1"/>
-    <material name="yellow" rgba="0.178 0.119 0.006 1"/>
-    <material name="lwl" rgba="0.8 0.8 0.8 1"/>
-    <material name="base" texture="base"/>
-    <material name="top_shell" texture="top_shell"/>
-    <material name="bottom_shell" texture="bottom_shell"/>
-    <material name="hip_l" texture="hip_l"/>
-    <material name="thigh" texture="thigh"/>
-    <material name="shank_l" texture="shank_l"/>
-    <material name="foot" texture="foot"/>
-    <material name="hip_r" texture="hip_r"/>
-    <material name="shank" texture="shank_r"/>
-    <material name="hatch" texture="hatch"/>
-    <material name="remote" texture="remote"/>
-    <material name="handle" texture="handle"/>
-    <material name="face" texture="face"/>
-    <material name="depth_camera" texture="depth_camera"/>
-    <material name="wide_angle_camera" texture="wide_angle_camera"/>
-    <material name="battery" texture="battery"/>
-    <material name="lidar_cage" texture="lidar_cage"/>
-    <material name="lidar" texture="lidar"/>
-    <material name="drive" texture="drive"/>
+    <material name="spot_mat" texture="spot_mat_text"/>
 
-    <texture type="2d" name="base" file="base.png"/>
-    <texture type="2d" name="top_shell" file="top_shell.png"/>
-    <texture type="2d" name="bottom_shell" file="bottom_shell.png"/>
-    <texture type="2d" name="remote" file="remote.png"/>
-    <texture type="2d" name="hatch" file="hatch.png"/>
-    <texture type="2d" name="handle" file="handle.png"/>
-    <texture type="2d" name="face" file="face.png"/>
-    <texture type="2d" name="battery" file="battery.png"/>
-    <texture type="2d" name="lidar_cage" file="lidar_cage.png"/>
-    <texture type="2d" name="depth_camera" file="depth_camera.png"/>
-    <texture type="2d" name="wide_angle_camera" file="wide_angle_camera.png"/>
-    <texture type="2d" name="lidar" file="lidar.png"/>
-    <texture type="2d" name="drive" file="drive.png"/>
-    <texture type="2d" name="hip_l" file="hip_l.png"/>
-    <texture type="2d" name="shank_l" file="shank_l.png"/>
-    <texture type="2d" name="foot" file="foot.png"/>
-    <texture type="2d" name="thigh" file="thigh.png"/>
-    <texture type="2d" name="shank_r" file="shank_r.png"/>
-    <texture type="2d" name="hip_r" file="hip_r.png"/>
+    <texture type="2d" name="spot_mat_text" file="spot_mat.png"/>
 
     <mesh file="base_0.obj"/>
     <mesh file="base_1.obj"/>
