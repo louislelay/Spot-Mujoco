@@ -10,4 +10,3 @@ I converted the .dae files to .obj format via Blender, I used obj2mjcf command l
 
 I've coded the spot.xml file, structured based on the Anymal C XML, while using parameters from the spot.urdf.xacro file.
 
-https://github.com/louislelay/Spot-Mujoco/blob/main/spot.png
