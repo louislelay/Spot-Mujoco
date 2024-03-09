@@ -70,7 +70,7 @@
 
     <worldbody>
         <light name="spotlight" mode="targetbodycom" target="base" pos="0 -1 2" cutoff="30"/>
-        <body name="base" pos="0 0 2" quat="1 1 0 0" childclass="spot">
+        <body name="base" pos="0 0 0.8" quat="1 1 0 0" childclass="spot">
             <freejoint/>
             <inertial mass="16.25" pos="0 0 0" diaginertia="0.085 1.045 1.042"/>
             <geom mesh="body" material="base" class="visual"/>
@@ -183,13 +183,9 @@
   </actuator>
 
 
-
-
-
-
-
-
-
-
+  <keyframe>
+    <key name="home" 
+      ctrl="0 0.9 -1.8 0 0.9 -1.8 0 0.9 -1.8 0 0.9 -1.8"/>
+  </keyframe>
 
 </mujoco>
