@@ -1,5 +1,5 @@
 <mujoco model="spot">
-    <compiler angle="degree" autolimits="true" balanceinertia="true"/>
+    <compiler angle="degree" autolimits="true" texturedir="assets" meshdir="assets" balanceinertia="true"/>
     <option cone="elliptic" impratio="100"/>
 
     <default>
@@ -80,19 +80,19 @@
                 <inertial mass="1.5" pos="0 0 0" diaginertia="0.0605 0.0 0.0"/>
                 <joint name="front_left_hip_x" type="hinge" pos="0 0 0" axis="1 0 0" range="-45 45" damping="0.1"/>
                 <geom material="base" mesh="front_left_hip" class="visual"/>
-                <geom mesh="front_left_hip_collision" class="collision"/>
+                <geom mesh="front_left_hip_collision" class="collision" quat="1 -1 0 0"/>
 
                 <body name="FL_upper_leg" pos="0.0 0.0 -0.110945">
                     <inertial mass="1.5" pos="0 0 0" diaginertia="0.0 0.5 0.0"/>
                     <joint name="front_left_upper_leg_x" type="hinge" pos="0 0 0" axis="0 0 1" range="-90 90" damping="0.1"/>
                     <geom material="base" mesh="front_left_upper_leg" class="visual"/>
-                    <geom mesh="front_left_upper_leg_collision" class="collision"/>
+                    <geom mesh="front_left_upper_leg_collision" class="collision" quat="1 -1 0 0"/>
 
                     <body name="FL_lower_leg" pos="0.025 -0.3205 0">
                         <inertial mass="1.5" pos="0 0 0" diaginertia="0.0 0.045 0.0"/>
                         <joint name="front_left_lower_leg_x" type="hinge" pos="0 0 0" axis="0 0 1" range="-90 90" damping="0.1"/>
                         <geom material="base" mesh="front_left_lower_leg" class="visual"/>
-                        <geom mesh="front_left_lower_leg_collision" class="collision"/>
+                        <geom mesh="front_left_lower_leg_collision" class="collision" quat="1 -1 0 0"/>
                     </body>
                 </body>
             </body>
@@ -101,19 +101,19 @@
                 <inertial mass="1.5" pos="0 0 0" diaginertia="0.0605 0.0 0.0"/>
                 <joint name="front_right_hip_x" type="hinge" pos="0 0 0" axis="1 0 0" range="-45 45" damping="0.1"/>
                 <geom material="base" mesh="front_right_hip" class="visual"/>
-                <geom mesh="front_right_hip_collision" class="collision"/>
+                <geom mesh="front_right_hip_collision" class="collision" quat="1 -1 0 0"/>
 
                 <body name="FR_upper_leg" pos="0.0 0.0 +0.110945">
                     <inertial mass="1.5" pos="0 0 0" diaginertia="0.0 0.5 0.0"/>
                     <joint name="front_right_upper_leg_x" type="hinge" pos="0 0 0" axis="0 0 1" range="-90 90" damping="0.1"/>
                     <geom material="base" mesh="front_right_upper_leg" class="visual"/>
-                    <geom mesh="front_right_upper_leg_collision" class="collision"/>
+                    <geom mesh="front_right_upper_leg_collision" class="collision" quat="1 -1 0 0"/>
 
                     <body name="FR_lower_leg" pos="0.025 -0.3205 0">
                         <inertial mass="1.5" pos="0 0 0" diaginertia="0.0 0.045 0.0"/>
                         <joint name="front_right_lower_leg_x" type="hinge" pos="0 0 0" axis="0 0 1" range="-90 90" damping="0.1"/>
                         <geom material="base" mesh="front_right_lower_leg" class="visual"/>
-                        <geom mesh="front_right_lower_leg_collision" class="collision"/>
+                        <geom mesh="front_right_lower_leg_collision" class="collision" quat="1 -1 0 0"/>
                     </body>
                 </body>
             </body>
@@ -122,19 +122,19 @@
                 <inertial mass="1.5" pos="0 0 0" diaginertia="0.0605 0.0 0.0"/>
                 <joint name="rear_left_hip_x" type="hinge" pos="0 0 0" axis="1 0 0" range="-45 45" damping="0.1"/>
                 <geom material="base" mesh="rear_left_hip" class="visual"/>
-                <geom mesh="rear_left_hip_collision" class="collision"/>
+                <geom mesh="rear_left_hip_collision" class="collision" quat="1 -1 0 0"/>
 
                 <body name="RL_upper_leg" pos="0.0 0.0 -0.110945">
                     <inertial mass="1.5" pos="0 0 0" diaginertia="0.0 0.5 0.0"/>
                     <joint name="rear_left_upper_leg_x" type="hinge" pos="0 0 0" axis="0 0 1" range="-90 90" damping="0.1"/>
                     <geom material="base" mesh="rear_left_upper_leg" class="visual"/>
-                    <geom mesh="rear_left_upper_leg_collision" class="collision"/>
+                    <geom mesh="rear_left_upper_leg_collision" class="collision" quat="1 -1 0 0"/>
 
                     <body name="RL_lower_leg" pos="0.025 -0.3205 0">
                         <inertial mass="1.5" pos="0 0 0" diaginertia="0.0 0.045 0.0"/>
                         <joint name="rear_left_lower_leg_x" type="hinge" pos="0 0 0" axis="0 0 1" range="-90 90" damping="0.1"/>
                         <geom material="base" mesh="rear_left_lower_leg" class="visual"/>
-                        <geom mesh="rear_left_lower_leg_collision" class="collision"/>
+                        <geom mesh="rear_left_lower_leg_collision" class="collision" quat="1 -1 0 0"/>
                     </body>
                 </body>
             </body>
@@ -143,19 +143,19 @@
                 <inertial mass="1.5" pos="0 0 0" diaginertia="0.0605 0.0 0.0"/>
                 <joint name="rear_right_hip_x" type="hinge" pos="0 0 0" axis="1 0 0" range="-45 45" damping="0.1"/>
                 <geom material="base" mesh="rear_right_hip" class="visual"/>
-                <geom mesh="rear_right_hip_collision" class="collision"/>
+                <geom mesh="rear_right_hip_collision" class="collision" quat="1 -1 0 0"/>
 
                 <body name="RR_upper_leg" pos="0.0 0.0 +0.110945">
                     <inertial mass="1.5" pos="0 0 0" diaginertia="0.0 0.5 0.0"/>
                     <joint name="rear_right_upper_leg_x" type="hinge" pos="0 0 0" axis="0 0 1" range="-90 90" damping="0.1"/>
                     <geom material="base" mesh="rear_right_upper_leg" class="visual"/>
-                    <geom mesh="rear_right_upper_leg_collision" class="collision"/>
+                    <geom mesh="rear_right_upper_leg_collision" class="collision" quat="1 -1 0 0"/>
 
                     <body name="RR_lower_leg" pos="0.025 -0.3205 0">
                         <inertial mass="1.5" pos="0 0 0" diaginertia="0.0 0.045 0.0"/>
                         <joint name="rear_right_lower_leg_x" type="hinge" pos="0 0 0" axis="0 0 1" range="-90 90" damping="0.1"/>
                         <geom material="base" mesh="rear_right_lower_leg" class="visual"/>
-                        <geom mesh="rear_right_lower_leg_collision" class="collision"/>
+                        <geom mesh="rear_right_lower_leg_collision" class="collision" quat="1 -1 0 0"/>
                     </body>
                 </body>
             </body>
